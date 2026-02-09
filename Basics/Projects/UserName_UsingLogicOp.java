@@ -22,6 +22,8 @@ public class UserName_UsingLogicOp {
         System.out.print("Enter username: ");
         String userInput = scanner.nextLine();
 
+        // this is not valid, must check the pre-existing.
+        // this is only for checking password given by the user.
         if (userInput.length() < 4 || userInput.length() > 12) {
             System.out.println("Username must be within 4-12 character!");
         } else if (userInput.contains(" ") || userInput.contains("_") || userInput.contains("-")) {
